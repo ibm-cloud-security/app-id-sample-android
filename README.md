@@ -1,32 +1,32 @@
-<img src="https://bluemixassets.eu-gb.mybluemix.net/api/Products/image/logos/basic.svg?key=[starter-basic]&event=readme-image-view" alt="Basic Logo" width="200px"/>
-
-## Basic Starter
-Basic IBM Cloud Mobile Starter in Java
+# IBM Cloud App ID
+Android Liberty Sample App for the IBM Cloud App ID service.
 
 [![](https://img.shields.io/badge/ibm%20cloud-powered-blue.svg)](https://www.ibm.com/cloud/)
 [![](https://img.shields.io/badge/platform-android-lightgrey.svg?style=flat)](https://developer.android.com/index.html)
 
-### Table of Contents
-* [Summary](#summary)
+<!---
+[![Codacy][img-codacy]][url-codacy]
+[![Version][img-version]][url-repo]
+[![DownloadsMonthly][img-downloads-monthly]][url-repo]
+[![DownloadsTotal][img-downloads-total]][url-repo]
+[![License][img-license]][url-repo]
+[![GithubWatch][img-github-watchers]][url-github-watchers]
+[![GithubStars][img-github-stars]][url-github-stars]
+[![GithubForks][img-github-forks]][url-github-forks]
+-->
+
+## Table of Contents
 * [Requirements](#requirements)
-* [Configuration](#configuration)
 * [Run](#run)
-* [License](#license)
+* [Apache License](#apache-license)
+* [IBM License](#ibm-license)
 
-### Summary
-
-The Basic IBM Cloud Mobile Starter is an empty project that has integration points for each of the IBM Cloud Mobile services.
-
-### Requirements
+## Requirements
 
 * A [IBM Cloud](https://www.ibm.com/cloud/) Account
 * [Android Studio](https://developer.android.com/studio/index.html) and [Gradle](https://gradle.org/gradle-download/)
 
-### Configuration
-
-* There is no configuration in the Basic starter. Open the project in Android Studio.
-
-### Run
+## Run
 
 Click **Run** to start the app in Android Studio.
 
@@ -34,7 +34,14 @@ Click **Run** to start the app in Android Studio.
 
 The application has built in integration points for the Mobile Analytics and Push Notifications services.
 
-### License
+## Apache License
 This package contains code licensed under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 and may also view the License in the LICENSE file within this package.
 
-zed.
+## IBM License
+Copyright (c) 2018 IBM Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
