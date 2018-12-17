@@ -18,7 +18,6 @@ Android Liberty Sample App for the IBM Cloud App ID service.
 ## Table of Contents
 * [Requirements](#requirements)
 * [Run](#run)
-* [Development](#development)
 * [Apache License](#apache-license)
 * [IBM License](#ibm-license)
 
@@ -34,9 +33,6 @@ Click **Run** to start the app in Android Studio.
 <img src="README_Images/basic.png" alt="Basic App Screenshot" width="250px"/>
 
 The application has built in integration points for the Mobile Analytics and Push Notifications services.
-
-## Development
-Any changes made to this sample most also be uploaded to the [App ID Dashboard](https://github.ibm.com/security-services/app-id-dashboard/tree/development/src/server/samples).
 
 ## Apache License
 This package contains code licensed under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 and may also view the License in the LICENSE file within this package.
