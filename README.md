@@ -1,5 +1,9 @@
 # IBM Cloud App ID
-Android Liberty Sample App for the IBM Cloud App ID service.
+Android Sample App Template for the IBM Cloud App ID service. The App ID Dashboard overwrites the following files with the user's information when they download an Android sample app:
+* app/src/main/res/values/credentials.xml
+* app/src/main/res/values/strings.xml
+* app/src/main/java/com/ibm/cloud/appid/android/sample/appid/StartupActivity.java
+* app/src/main/java/com/ibm/cloud/appid/android/sample/appid/MainActivity.java
 
 [![IBM Cloud powered][img-ibmcloud-powered]][url-ibmcloud]
 [![Android Badge][img-android-badge]][url-android-badge]
