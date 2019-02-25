@@ -29,7 +29,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.ibm-cloud-security:appid-clientsdk-android:development-SNAPSHOT'
+    implementation 'com.github.ibm-cloud-security:appid-clientsdk-android:5.+'
     androidTestImplementation 'junit:junit:4.12'
     api 'com.android.support:appcompat-v7:27.1.1'
     androidTestImplementation 'com.android.support.test.uiautomator:uiautomator-v18:2.1.3'
