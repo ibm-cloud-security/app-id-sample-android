@@ -296,7 +296,7 @@ public class AfterLoginActivity extends AppCompatActivity implements PopupMenu.O
             launchLoginWidget();
             return;
         }
-        appIDAuthorizationManager.logout(null, null);
+        appID.logout();
         tokensPersistenceManager.clearStoredTokens();
         Intent intent = new Intent(this, MainActivity.class);
         this.startActivity(intent);
