@@ -34,6 +34,7 @@ public class AppIdSampleAuthorizationListener implements AuthorizationListener {
     private TokensPersistenceManager tokensPersistenceManager;
     private boolean isAnonymous;
     private Activity activity;
+    static private boolean shouldShowChromeIssueDialog = true;
     static private int clicks = 0;
 
     public AppIdSampleAuthorizationListener(Activity activity, AppIDAuthorizationManager authorizationManager, boolean isAnonymous) {
@@ -52,8 +53,8 @@ public class AppIdSampleAuthorizationListener implements AuthorizationListener {
     @Override
     public void onAuthorizationCanceled() {
         Log.w(logTag("onAuthorizationCanceled"),"Authorization canceled");
-        if (clicks == 3) {
-            // on the third onAuthorizationCanceled, we assume that the app isn't able to open Chrome
+        if (shouldShowChromeIssueDialog && clicks % 3 == 0) {
+            // in here we assume that the app isn't able to open Chrome
             // show dialog suggesting Peter may have to open chrome and accept the terms of service.
             AlertDialog.Builder builder = new AlertDialog.Builder(activity);
             builder.setMessage("Please open Chrome and accept their terms of service.")
@@ -66,12 +67,14 @@ public class AppIdSampleAuthorizationListener implements AuthorizationListener {
                     });
             AlertDialog dialog = builder.create();
             dialog.show();
+            shouldShowChromeIssueDialog = false; // dialog was shown, we don't want to show it again
         }
     }
 
     @Override
     public void onAuthorizationSuccess(AccessToken accessToken, IdentityToken identityToken, RefreshToken refreshToken) {
         Log.i(logTag("onAuthorizationSuccess"),"Authorization succeeded");
+        shouldShowChromeIssueDialog = false; // if authorization was successful then there's no problem with chrome
         if (accessToken == null && identityToken == null) {
             Log.i(logTag("onAuthorizationSuccess"),"Finish done flow");
 
